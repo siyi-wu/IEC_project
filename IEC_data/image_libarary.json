@@ -1,0 +1,35 @@
+{
+  "china_check_sample": {
+    "path": "images/china_bank_check.jpg",
+    "description": "一张中国银行的通用转账支票样本，可用于解释什么是支票或中国的银行业务凭证。",
+    "similar_word": [
+      "中国银行支票",
+      "银行支票",
+      "转账支票",
+      "支票",
+      "银行凭证"
+    ]
+  },
+  "us_notes_collection": {
+    "path": "images/all_us_notes.jpg",
+    "description": "一张包含所有常见面额的美元纸币",
+    "similar_word": [
+      "美元",
+      "美金",
+      "美元纸币",
+      "美元钞票",
+      "全套美元"
+    ]
+  },
+  "yuan_100_note": {
+    "path": "images/cny_100.jpg",
+    "description": "100元人民币纸币",
+    "similar_word": [
+      "一百元",
+      "100块",
+      "人民币",
+      "一百块钱",
+      "百元大钞"
+    ]
+  }
+}
