@@ -6,10 +6,18 @@ from typing import List, Dict
 class ImageManager:
     def __init__(self, image_library_path: str):
         """
-        image_library_path: image_libarary.json 的路径
+        image_library_path: image_library.json 的路径（支持相对路径）
         """
-        self.image_library_path = Path(image_library_path)
+        # 将输入路径转为 Path 对象，并立即解析为绝对路径（关键！）
+        self.image_library_path = Path(image_library_path).resolve()
         self.image_root = self.image_library_path.parent
+
+        # 检查文件是否存在（友好报错）
+        if not self.image_library_path.exists():
+            raise FileNotFoundError(
+                f"Image library file not found at: {self.image_library_path}\n"
+                "Please check the path and ensure the file exists."
+            )
 
         with open(self.image_library_path, "r", encoding="utf-8") as f:
             self.image_library = json.load(f)

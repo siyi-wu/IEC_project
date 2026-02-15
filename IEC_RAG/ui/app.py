@@ -13,7 +13,7 @@ qa_engine = QAEngine(
 )
 
 image_manager = ImageManager(
-    image_library_path="/root/autodl-tmp/IEC_data/image_libarary.json"
+    image_library_path="../IEC_data/image_library.json"
 )
 
 # ---------- 业务逻辑 ----------
