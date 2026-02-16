@@ -57,7 +57,7 @@ with gr.Blocks(title="IEC-RAG 学术问答系统") as demo:
         with gr.Column(scale=3):
             query_input = gr.Textbox(
                 label="请输入你的问题",
-                placeholder="例如：人脸伪造检测有哪些常用方法？",
+                placeholder="例如：人民币有哪些鉴伪方法？",
                 lines=3
             )
             submit_btn = gr.Button("🔍 提问")
