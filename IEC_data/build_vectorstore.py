@@ -10,7 +10,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 
 
 DOC_LIST_PATH = "../../src_files/markdown_filenames_with_suffix.txt"
-VECTOR_DB_PATH = "./faiss_db"
+VECTOR_DB_PATH = "../../vector"
 EMBEDDING_MODEL = "/root/autodl-tmp/models/bge-base-zh-v1.5"
 
 

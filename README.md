@@ -1,17 +1,18 @@
 # 使用说明
+- 首先运行`IEC_project/IEC_data/build_vectorstore.py`，建立向量库，详见构建向量索引说明
 - 运行`main.py`即可
 
 ## 构建向量索引说明
 
 - 脚本位置：`IEC_project/IEC_data/build_vectorstore.py`
 - 默认文档列表：`src_files/doc250827.txt`
-- 默认向量库保存位置：`IEC_project/IEC_data/faiss_db`
+- 默认向量库保存位置：`vector`(在`IEC_project`的同级目录)
 - 默认嵌入模型：`models/bge-base-zh-v1.5`
 
 命令行参数（可选，不必每次都填）：
 
 - `--doc-list PATH`：指定文档列表文件（每行一个 markdown 路径）。默认使用 `src_files/doc250827.txt`。
-- `--vector-db PATH`：指定向量库目录（默认 `IEC_project/IEC_data/faiss_db`）。
+- `--vector-db PATH`：指定向量库目录（默认 `vector`）。
 - `--model PATH`：嵌入模型路径（默认 `models/bge-base-zh-v1.5`）。
 - `--rebuild`：若指定则删除已有向量库并从头重建。
 - `--batch-size N`：分批大小，默认 `256`（按 chunk 数计）。用于控制显存/内存峰值。

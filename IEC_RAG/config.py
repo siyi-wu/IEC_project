@@ -7,7 +7,7 @@ EMBEDDING_MODEL = "../../models/bge-base-zh-v1.5"  # 中文向量模型
 # =======================
 # 向量库路径
 # =======================
-VECTOR_DB_PATH = "../IEC_data/faiss_db"
+VECTOR_DB_PATH = "../../vector"
 
 # =======================
 # RAG 参数
