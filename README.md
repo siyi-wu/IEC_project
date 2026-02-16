@@ -1,7 +1,7 @@
 # 使用说明
 - 运行`main.py`即可
 
-构建向量索引说明
+## 构建向量索引说明
 
 - 脚本位置：`IEC_project/IEC_data/build_vectorstore.py`
 - 默认文档列表：`src_files/doc250827.txt`
@@ -27,6 +27,6 @@ python IEC_data/build_vectorstore.py --rebuild --device cpu
 
 备注：脚本会把 `doc_list` 中的相对路径以该列表文件所在目录为基准解析，并在索引中保存解析后的绝对 `source` 路径。
 
-## WSY
+## WSY RAG
 - 代码已经分模块构建完成。新功能可以新建文件夹，放置源代码。最终目的是运行`main.py`可以直接跑通整个工程。
 - 需要在`IEC_project`的同级目录下新建`models`文件夹，下载`bge-base-zh-v1.5`和`qwen2.5-7b`模型
